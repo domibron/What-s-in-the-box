@@ -19,29 +19,7 @@ public class killandreplace : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.transform.tag == "Kox")
-        {
-            Instantiate(Resources.Load("box") as GameObject, Vector3.zero, Quaternion.Euler(0, 0, 0));
-            Destroy(other.gameObject);
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        Destroy(other.gameObject);
-        if (other.transform.tag == "Ball")
-        {
-            Instantiate(Resources.Load("ball") as GameObject, Vector3.zero, Quaternion.Euler(0, 0, 0));
-            Destroy(other.gameObject);
-        }
-
-        if (other.transform.tag == "Knife")
-        {
-            Instantiate(Resources.Load("knife") as GameObject, Vector3.zero, Quaternion.Euler(0, 0, 0));
-            Destroy(other.gameObject);
-        }
-
-        if (other.transform.tag == "Kox")
+        if (other.transform.tag == "Box")
         {
             Instantiate(Resources.Load("box") as GameObject, Vector3.zero, Quaternion.Euler(0, 0, 0));
             Destroy(other.gameObject);
